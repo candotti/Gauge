@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var gaugeView: GaugeView!
+    @IBOutlet var currentValueLabel: UILabel!
+    @IBAction func updateGaugeWithRandomValue(){
+        let value = randomBetweenNumbers(0.0, secondNum: 1.0)
+        currentValueLabel.text = String(format: "%.1f", value)
+        gaugeView.updateWithRandomValue(value)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func randomBetweenNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat{
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
 }
 

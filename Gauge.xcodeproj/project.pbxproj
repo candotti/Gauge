@@ -12,6 +12,8 @@
 		64DA9A2F1D5211F600709348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DA9A2D1D5211F600709348 /* Main.storyboard */; };
 		64DA9A311D5211F600709348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DA9A301D5211F600709348 /* Assets.xcassets */; };
 		64DA9A341D5211F600709348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DA9A321D5211F600709348 /* LaunchScreen.storyboard */; };
+		64DA9A3D1D52124C00709348 /* GaugeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA9A3C1D52124C00709348 /* GaugeLayer.swift */; };
+		64DA9A3F1D52125E00709348 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA9A3E1D52125E00709348 /* GaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		64DA9A301D5211F600709348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64DA9A331D5211F600709348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64DA9A351D5211F600709348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DA9A3C1D52124C00709348 /* GaugeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeLayer.swift; sourceTree = "<group>"; };
+		64DA9A3E1D52125E00709348 /* GaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		64DA9A281D5211F600709348 /* Gauge */ = {
 			isa = PBXGroup;
 			children = (
+				64DA9A3B1D52123600709348 /* GaugeView */,
 				64DA9A291D5211F600709348 /* AppDelegate.swift */,
 				64DA9A2B1D5211F600709348 /* ViewController.swift */,
 				64DA9A2D1D5211F600709348 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				64DA9A351D5211F600709348 /* Info.plist */,
 			);
 			path = Gauge;
+			sourceTree = "<group>";
+		};
+		64DA9A3B1D52123600709348 /* GaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				64DA9A3C1D52124C00709348 /* GaugeLayer.swift */,
+				64DA9A3E1D52125E00709348 /* GaugeView.swift */,
+			);
+			path = GaugeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DA9A2C1D5211F600709348 /* ViewController.swift in Sources */,
+				64DA9A3D1D52124C00709348 /* GaugeLayer.swift in Sources */,
+				64DA9A3F1D52125E00709348 /* GaugeView.swift in Sources */,
 				64DA9A2A1D5211F600709348 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
