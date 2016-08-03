@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func updateGaugeWithRandomValue(){
         let value = randomBetweenNumbers(0.0, secondNum: 1.0)
         currentValueLabel.text = String(format: "%.1f", value)
-        gaugeView.updateWithRandomValue(value)
+        gaugeView.updateGauge(value)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

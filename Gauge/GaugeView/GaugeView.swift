@@ -13,7 +13,7 @@ class GaugeView: UIView {
 
     private var circleLayer: GaugeLayer!
     
-    func addLayer(){
+    private func addLayer(){
         circleLayer = GaugeLayer(lineWidth: 30,
                                  value:CGFloat(M_PI*2),
                                  color: UIColor.redColor(),
@@ -28,7 +28,7 @@ class GaugeView: UIView {
         }
     
     }
-    func updateWithRandomValue(value:CGFloat){
+    func updateGauge(value:CGFloat){
         circleLayer.strokeEnd = value
     }
 }
