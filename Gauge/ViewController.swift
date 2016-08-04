@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var gaugeView: GaugeView!
-    @IBOutlet var currentValueLabel: UILabel!
+    @IBOutlet weak var gaugeView: GaugeView!
+    @IBOutlet weak var currentValueLabel: UILabel!
     @IBAction func updateGaugeWithRandomValue(){
         let value = randomBetweenNumbers(0.0, secondNum: 1.0)
         currentValueLabel.text = String(format: "%.1f", value)
